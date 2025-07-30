@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "test-cf-deploy",
+  "main": ".output/server/index.mjs",
+  "build": {
+    "command": "bunx convex deploy --cmd 'bun run build'",
+  },
+  "compatibility_date": "2025-07-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".output/public",
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "placement": {
+    "mode": "smart",
+  },
+  "vars": {
+    "CONVEX_DEPLOYMENT": "mellow-kiwi-930",
+    "VITE_CONVEX_URL": "https://majestic-koala-428.convex.cloud",
+    "VITE_CONVEX_HTTP_ACTION_URL": "https://majestic-koala-428.convex.site",
+    "VITE_SLACK_CLIENT_ID": "a random string here",
+  },
+}
