@@ -8,5 +8,5 @@
 **/public
 convex/_generated/
 convex/README.md
-pnpm-lock.yaml
 routeTree.gen.ts
+bun.lock
