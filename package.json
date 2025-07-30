@@ -3,6 +3,7 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "packageManager": "bun@1.2.19",
   "scripts": {
     "dev": "bunx convex dev --once && concurrently -r bun:dev:web bun:dev:convex",
     "dev:web": "vite dev",
